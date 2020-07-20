@@ -9,8 +9,8 @@ class FSMAccountCase(TransactionCase):
         super(FSMAccountCase, self).setUp()
         self.Wizard = self.env["fsm.wizard"]
         self.WorkOrder = self.env["fsm.order"]
-        self.AccountInvoice = self.env["account.invoice"]
-        self.AccountInvoiceLine = self.env["account.invoice.line"]
+        self.AccountInvoice = self.env["account.move"]
+        self.AccountInvoiceLine = self.env["account.move.line"]
         # create a Res Partner
         self.test_partner = self.env["res.partner"].create(
             {"name": "Test Partner", "phone": "123", "email": "tp@email.com"}
