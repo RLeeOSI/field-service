@@ -30,6 +30,5 @@ class FSMAccountCase(TransactionCase):
                 "email": "tp@email.com",
                 "partner_id": self.test_loc_partner.id,
                 "owner_id": self.test_loc_partner.id,
-                "customer_id": self.test_loc_partner.id,
             }
         )
