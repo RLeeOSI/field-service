@@ -13,6 +13,11 @@
                     options="{'color_field': 'color'}"
                 />
             </field>
+            <field name="person_id" position="attributes">
+                <attribute name="domain">
+                    [('skill_ids', 'in', skill_ids)]
+                </attribute>
+            </field>
         </field>
     </record>
 </odoo>
